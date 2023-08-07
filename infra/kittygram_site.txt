@@ -1,0 +1,5 @@
+IP: 158.160.76.74;
+name_taski: https://task1.serveblog.net;
+name_kittygram: https://infrasprint1.hopto.org;
+login: admin;
+password: 18344882dasha;
