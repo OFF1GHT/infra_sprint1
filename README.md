@@ -31,6 +31,10 @@ pip install -r requirements.txt
 ```
 
 ## Запуск
+1.  Установите Gunicorn:
+```
+pip install gunicorn==20.1.0
+```
 1. Запустите Gunicorn:
 ```
 gunicorn -b 0.0.0.0:8000 app:app
