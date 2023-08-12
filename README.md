@@ -29,19 +29,20 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+5. Создайте файл .env на основе .env.example и настройте в нем необходимые константы. Пример необходимых констант лежит в файле env.example в корневой директории.
 
 ## Запуск
 1.  Установите Gunicorn:
 ```
 pip install gunicorn==20.1.0
 ```
-1. Запустите Gunicorn:
+2. Запустите Gunicorn:
 ```
 gunicorn -b 0.0.0.0:8000 app:app
 ```
-2. Настройте Nginx. Создайте конфигурационный файл в директории /etc/systemd/system/gunicorn_названиепроекта.service
+3. Настройте Nginx. Создайте конфигурационный файл в директории /etc/systemd/system/gunicorn_названиепроекта.service
 
-3. Перезапустите Nginx:
+4. Перезапустите Nginx:
 ```
 sudo service nginx restart
 ```
@@ -51,3 +52,4 @@ sudo service nginx restart
 1. Откройте веб-браузер и перейдите по адресу https://infrasprint1.hopto.org.
 2. Нажмите на кнопку "Добавить кота" и заполните информацию о своем питомце.
 3. Просматривайте и редактируйте информацию о котиках на главной странице.
+
